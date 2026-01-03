@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>First Three.js Scene</title>
+    <style>
+      #info {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 13px;
+        max-width: 250px;
+      }
+      #info h3 {
+        margin-top: 0;
+        color: #4ecdc4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="canvas"></canvas>
+      <div id="info">
+        <h3>Grid View and Orbit Controls</h3>
+        <p>
+          You can zoom with the mouse wheel, rotate the scene with the left
+          mouse button and move the camera with the right mouse button.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/src/grid-and-orbit-controls.js"></script>
+  </body>
+</html>

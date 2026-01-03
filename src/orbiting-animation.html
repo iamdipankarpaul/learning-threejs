@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cos() Applications in 3D Animation</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #info {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 13px;
+        max-width: 250px;
+      }
+      #info h3 {
+        margin-top: 0;
+        color: #4ecdc4;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="info">
+      <h3>Grid View and Orbit Controls</h3>
+      <p>
+        Animation of a 3D scene with orbit controls and a grid view. Orange
+        spheres orbit the scene in a circle, Blue sphere orbit in a eclipse. and
+        Green sphere orbit in a eclipse with a tilt.
+      </p>
+    </div>
+    <script type="module" src="/src/orbiting-animation.js"></script>
+  </body>
+</html>
